@@ -1,0 +1,20 @@
+{
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "babel src -d build && cp package.json ../../yarn.lock build && cd build && yarn --production",
+    "clean": "rm -rf build"
+  },
+  "peerDependencies": {
+    "aws-sdk": "^2.176.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "aws-sdk": "^2.176.0",
+    "babel-eslint": "^8.1.2",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.14.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  }
+}
