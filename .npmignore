@@ -1,0 +1,7 @@
+node_modules
+src
+template
+.babelrc
+.eslintrc
+.gitignore
+yarn.lock
