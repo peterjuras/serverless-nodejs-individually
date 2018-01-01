@@ -4,7 +4,7 @@
   "private": true,
   "license": "UNLICENSED",
   "devDependencies": {
-    "serverless-nodejs-individually": "^1.0.1"
+    "serverless-nodejs-individually": "^1.0.2"
   },
   "workspaces": [
     "functions/*"
