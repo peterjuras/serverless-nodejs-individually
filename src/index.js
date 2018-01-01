@@ -85,8 +85,11 @@ class ServerlessNodejsIndividuallyPlugin {
   };
 
   clean = async (functionName) => {
-    const isCleanNeeded = isProduction(this.serverless, this.options);
-    if (!this.options.clean && !isCleanNeeded) {
+    const isCleanNeeded =
+      this.options.clean ||
+      this.serverless.processedInput.commands[0] === 'clean' ||
+      isProduction(this.serverless, this.options);
+    if (!isCleanNeeded) {
       return;
     }
 
